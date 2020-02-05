@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 1e2684e94770a544493da93b33831dd7
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - explosion: {instanceID: 0}
+  - hitIndicator: {instanceID: 0}
+  - shootSound: {fileID: 8300000, guid: 96624192a3005314ca16f985befa2173, type: 1}
+  - exposionSound: {fileID: 8300000, guid: 22e24dc416d7b404cbcd6666b4347c3d, type: 1}
+  - fireBall: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}

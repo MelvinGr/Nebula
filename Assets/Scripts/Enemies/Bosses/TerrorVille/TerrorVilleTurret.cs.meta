@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 335896efead7a1c4f9f8a73f600db649
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - explosion: {fileID: 400000, guid: 67e5b9f09995840449c988b145cc1d7b, type: 2}
+  - exposionSound: {fileID: 8300000, guid: 22e24dc416d7b404cbcd6666b4347c3d, type: 1}
+  - hitIndicator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}

@@ -1,0 +1,15 @@
+// Trophies
+Destroy 250 enemy ships=Vernietig 250 vijandelijke schepen
+Collect all weapon power-ups=Verzamel alle power-ups
+Scrap Slayer= Scrap Slayer
+Master of the skies=Master of the skies
+Fully Equipped=Fully equipped
+Destroy 100 enemy ships=Vernietig 100 vijandelijke schepen
+Complete the game without powerups=Voltooi het spel zonder power-ups
+Complete the game without losing lives=Voltooi het spel zonder een level te verliezen
+Down to Earth=Down to earth
+Die Hard=Die hard
+Invincible=Invincible
+You have completed the game=Je hebt het spel uitgespeeld
+Back=[TERUG]
+Achievements=Achievements

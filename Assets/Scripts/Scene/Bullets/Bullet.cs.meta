@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e43c62feede88e14991bb379104b3826
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - explosion: {instanceID: 0}
+  - explosionSound: {instanceID: 0}
+  - originObject: {instanceID: 0}
+  - redTexture: {fileID: 2800000, guid: f9f755c9260c3114a911d06736982b4b, type: 1}
+  - blueTexture: {fileID: 2800000, guid: c3e24e6c6e6ea234890508a8a07535a1, type: 1}
+  - yellowTexture: {fileID: 2800000, guid: 22b186240327cf94f8d716ee1cf29d4d, type: 1}
+  executionOrder: 0
+  icon: {instanceID: 0}

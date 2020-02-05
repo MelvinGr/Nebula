@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 20f3418bd5383c44aa59d61285f4b1ec
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - rolloverAudio: {fileID: 8300000, guid: 1665f8ac8172c0f44ab690362a9ce19a, type: 1}
+  - clickAudio: {fileID: 8300000, guid: 15818588d9eeee94cb27bf51a4f47f93, type: 1}
+  executionOrder: 0
+  icon: {instanceID: 0}

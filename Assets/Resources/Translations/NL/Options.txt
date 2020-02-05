@@ -1,0 +1,7 @@
+// Options
+Back Button=[TERUG]
+Anti aliasing=Anti aliasing
+Effects=Effecten
+Music Volume=Muziek volume
+Options=Opties
+Sound Volume=Geluid volume

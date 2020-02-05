@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CameraConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<rotation>
+		<x>90</x>
+		<y>0</y>
+		<z>0</z>
+	</rotation>
+	<heightOffset>6</heightOffset>
+	<cameraSpeed>2</cameraSpeed>
+	<followPlayer>true</followPlayer>
+</CameraConfig>

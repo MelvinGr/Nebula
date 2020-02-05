@@ -1,0 +1,5 @@
+// MainMenu
+Options=[OPTIES]
+Start=[START]
+Help=[HELP]
+Trophies=[ACHIEVEMENTS]

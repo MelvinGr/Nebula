@@ -1,0 +1,16 @@
+// Level
+Controls=Spatie/X - Schieten\nWASD/Pijlen - Bewegen\nP - Pauze\nM - Dempen
+HighscoreText=Highscore: 
+PointsText=Score: 
+New Achievement=Nieuwe Achievement
+Prepare!=Bereid je voor!
+Next Boss!=Volgende Baas!
+Next Stage=Volgend Level!
+Boss Battle=Baas Battle
+First Stage=Eerste Level
+OptionsTitle=Pauze
+InGameQuit=Stoppen
+Resume=Doorgaan
+Quit?=Stoppen?
+QuitConfirm=Stoppen
+QuitCancel=Terug

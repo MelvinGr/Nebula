@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LevelConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>2</ID>
+  <blockArrangement>
+    <string>ParkBlock2|0, ParkBlock2|0</string>
+    <string>WaterBlock1, EmptyBlock</string>
+	<string>WaterBlock1, EmptyBlock</string>
+	<string>WaterBlock1, WaterBlock3|180</string>
+    <string>WaterBlock1, EmptyBlock</string>
+	<string>WaterBlock1, EmptyBlock</string>
+	<string>ParkBlock3|90, ParkBlock3|90</string>
+  </blockArrangement>
+  <waveSpawnList>
+  <WaveSpawn>
+    <name>HorizontalWave</name>
+    <startPosition>
+      <x>23.7522049</x>
+      <y>13.74516</y>
+      <z>15.1700544</z>
+    </startPosition>
+  </WaveSpawn>
+  <WaveSpawn>
+    <name>HorizontalWave</name>
+    <startPosition>
+      <x>20.3672619</x>
+      <y>13.74516</y>
+      <z>20.8966866</z>
+    </startPosition>
+  </WaveSpawn>
+  <WaveSpawn>
+    <name>CircleWave</name>
+    <startPosition>
+      <x>24.51358</x>
+      <y>13.74516</y>
+      <z>31.5949211</z>
+    </startPosition>
+  </WaveSpawn>
+  <WaveSpawn>
+    <name>VerticalWave</name>
+    <startPosition>
+      <x>20.1841412</x>
+      <y>13.74516</y>
+      <z>41.03806</z>
+    </startPosition>
+  </WaveSpawn>
+  <WaveSpawn>
+    <name>VerticalWave</name>
+    <startPosition>
+      <x>28.3926754</x>
+      <y>13.74516</y>
+      <z>41.03806</z>
+    </startPosition>
+  </WaveSpawn>
+  <WaveSpawn>
+    <name>CircleWave</name>
+    <startPosition>
+      <x>23.5014572</x>
+      <y>13.74516</y>
+      <z>61.9193268</z>
+    </startPosition>
+  </WaveSpawn>
+  <WaveSpawn>
+    <name>VShapeKamikazeWave</name>
+    <startPosition>
+      <x>21.81873</x>
+      <y>13.74516</y>
+      <z>72.22009</z>
+    </startPosition>
+  </WaveSpawn>
+  <WaveSpawn>
+    <name>VShapeKamikazeWave</name>
+    <startPosition>
+      <x>27.13263</x>
+      <y>13.74516</y>
+      <z>72.22009</z>
+    </startPosition>
+  </WaveSpawn>
+  </waveSpawnList>
+  <bossName>TerrorVille</bossName>
+  <pickUpSpawnList>
+    <PickUpSpawn>
+      <name>HealthPickup</name>
+      <startPosition>
+        <x>-2</x>
+        <z>30</z>
+      </startPosition>	  
+    </PickUpSpawn>	
+    <PickUpSpawn>
+      <name>GunSpreadPickup</name>
+      <startPosition>
+        <x>2</x>
+        <z>50</z>
+      </startPosition>	  
+    </PickUpSpawn>
+  </pickUpSpawnList>
+  <wavesLoopCount>6</wavesLoopCount>
+  <loopPickUps>true</loopPickUps>
+  <spawnEnemies>true</spawnEnemies>
+  <spawnBlocks>true</spawnBlocks>
+  <spawnPickups>true</spawnPickups>  
+  <spawnTurrets>true</spawnTurrets> 
+  <turretRoundsPerMinute>55</turretRoundsPerMinute>
+</LevelConfig>

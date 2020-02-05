@@ -1,0 +1,123 @@
+fileFormatVersion: 2
+guid: af1461e2f81aead47959cab2ec9349f9
+ModelImporter:
+  fileIDToRecycleName:
+    4300000: polySurface2
+    4300002: transform48
+    4300004: transform47
+    4300006: transform46
+    4300008: transform45
+    4300010: transform44
+    4300012: transform43
+    4300014: polySurface15
+    4300016: transform42
+    4300018: transform41
+    4300020: polySurface17
+    4300022: transform40
+    4300024: pCube26
+    4300026: transform39
+    4300028: pCube29
+    4300030: transform38
+    4300032: pCube28
+    4300034: transform37
+    4300036: pCube27
+    4300038: transform36
+    4300040: pCube33
+    4300042: transform35
+    4300044: pCube32
+    4300046: transform34
+    4300048: pCube31
+    4300050: transform33
+    4300052: pCube30
+    4300054: transform32
+    4300056: pCube34
+    4300058: transform31
+    4300060: pCube35
+    4300062: transform30
+    4300064: pCube36
+    4300066: transform29
+    4300068: pCube37
+    4300070: transform28
+    4300072: pCube41
+    4300074: transform27
+    4300076: pCube40
+    4300078: transform26
+    4300080: pCube39
+    4300082: transform25
+    4300084: pCube38
+    4300086: transform24
+    4300088: transform23
+    4300090: transform22
+    4300092: transform21
+    4300094: transform20
+    4300096: transform19
+    4300098: transform18
+    4300100: transform17
+    4300102: transform16
+    4300104: transform15
+    4300106: transform14
+    4300108: transform13
+    4300110: transform12
+    4300112: transform11
+    4300114: transform10
+    4300116: transform9
+    4300118: transform8
+    4300120: transform7
+    4300122: transform6
+    4300124: transform5
+    4300126: transform4
+    4300128: transform3
+    4300130: transform2
+    4300132: transform1
+    4300134: polySurface22
+    100100000: DataTemplate __Singleton__
+  serializedVersion: 10
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+  animations:
+    generateAnimations: 3
+    bakeSimulation: 0
+    splitAnimations: 1
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMesh: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  textMetaNamesToFileIDs:
+    //RootNode:
+      data:
+        first: 1
+        second: a0860100
+      data:
+        first: 4
+        second: 801a0600
+      data:
+        first: 23
+        second: 60182300
+      data:
+        first: 33
+        second: a05a3200
+      data:
+        first: 111
+        second: 605fa900

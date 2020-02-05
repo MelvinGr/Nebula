@@ -1,0 +1,11 @@
+// Help
+Back=[TERUG]
+Controls:=Besturing:
+ControlsDesc=Spatie/X - Schieten\nWASD/Pijtjes - Bewegen\nP - Pauze\nM - Dempen
+Healthefill=Extra leven
+Healthinfo=Pak deze voor een extra leven
+Help=Help
+Desc=Je thuis planeet Nebula is onder aanval door een buitenaards ras. Jij moet\ndeze kwade krachten stoppen om de rust en vrede op jou thuis planeet te herstellen.\nVerzamel power-ups om sterker te worden en vernietig vijanden om punten te verdienen.
+Power-Ups=Power-Ups
+Spec_info=Maakt je wapen sterker
+Spec_upgrade=Spec upgrade

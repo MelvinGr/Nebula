@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlayerConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <playerSpeed>9</playerSpeed>
+  <slowPrecentage>40</slowPrecentage>
+  <smooth>5</smooth>
+  <horizontalEnabled>true</horizontalEnabled>
+  <verticalEnabled>true</verticalEnabled>
+  <onRails>true</onRails>
+  <inputEnabled>true</inputEnabled>
+  <health>3</health>
+  <deathCountdown>3</deathCountdown>
+  <imortal>false</imortal>
+</PlayerConfig>
