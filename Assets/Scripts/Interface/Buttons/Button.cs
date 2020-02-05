@@ -19,14 +19,14 @@ public class Button : MonoBehaviour
 		cam = Camera.main.GetComponent<CameraFade>();
 		cam.OnFadeOutCompleted += FadeOutCompleted;		
 		
-		if(!guiText.text.StartsWith("["))
-			guiText.text = "[" + guiText.text;
-		if(!guiText.text.EndsWith("]"))
-			guiText.text = guiText.text + "]";
+		if(!GetComponent<GUIText>().text.StartsWith("["))
+			GetComponent<GUIText>().text = "[" + GetComponent<GUIText>().text;
+		if(!GetComponent<GUIText>().text.EndsWith("]"))
+			GetComponent<GUIText>().text = GetComponent<GUIText>().text + "]";
 		
-		guiText.text = guiText.text.ToUpper();
+		GetComponent<GUIText>().text = GetComponent<GUIText>().text.ToUpper();
 		
-		originalText = guiText.text;
+		originalText = GetComponent<GUIText>().text;
 		
 		guiScript = Functions.GetComponentInGameObject<GUIScript>("GUI");		
 		
@@ -69,12 +69,12 @@ public class Button : MonoBehaviour
 		if(clicked)
 			return;
 			
-		guiText.material.color = Color.red;
+		GetComponent<GUIText>().material.color = Color.red;
 		
 		//if(addBrackets)
 			//guiText.text = "[" + originalText + "]";
 		
-		audio.PlayOneShot(rolloverAudio);
+		GetComponent<AudioSource>().PlayOneShot(rolloverAudio);
 	}
 
 	void OnMouseExit()
@@ -84,7 +84,7 @@ public class Button : MonoBehaviour
 		//if(addBrackets)
 			//guiText.text = originalText;
 			
-		guiText.material.color = Color.white;
+		GetComponent<GUIText>().material.color = Color.white;
 	}
 
 	void OnMouseDown()
@@ -92,7 +92,7 @@ public class Button : MonoBehaviour
 		if(clicked)
 			return;
 		
-		audio.PlayOneShot(clickAudio);
+		GetComponent<AudioSource>().PlayOneShot(clickAudio);
 		
 		clickedName = transform.name;
 		switch(transform.name)

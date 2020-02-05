@@ -166,7 +166,7 @@ public class BaseTimer : MonoBehaviour
 	
 	void OnGUI()
 	{
-		GUIText guiText = (GameObject.Find("GUI/Debug/Timert_Text") ? GameObject.Find("GUI/Debug/Timert_Text").guiText : null);		
+		GUIText guiText = (GameObject.Find("GUI/Debug/Timert_Text") ? GameObject.Find("GUI/Debug/Timert_Text").GetComponent<GUIText>() : null);		
 		if(guiText)
 			guiText.text = guiString;
 	}

@@ -122,7 +122,7 @@ public class GUIScript : MonoBehaviour
 			newAchievement.transform.position = new Vector3(1, newAchievement.transform.position.y, newAchievement.transform.position.z);
 			
 		if(text != null)
-			newAchievementText.guiText.text = text;
+			newAchievementText.GetComponent<GUIText>().text = text;
 			
 		if(enabled)
 			GameManager.timer.Add("GUI_DisableNewAchievement-" + Time.time, 5, false, false, delegate(){ SetNewAchievementEnabled(false); });
@@ -138,8 +138,8 @@ public class GUIScript : MonoBehaviour
 
 	void OnGUI()
 	{	
-		pointText.guiText.text = String.Format("{0:0000}", GameManager.instance.playerScore);		
-		highscoreCount.guiText.text = String.Format("{0:0000}", GameManager.instance.config.highScore);
-		lifeCount.guiText.text = "X" + String.Format("{0:00}", GameManager.player.health);
+		pointText.GetComponent<GUIText>().text = String.Format("{0:0000}", GameManager.instance.playerScore);		
+		highscoreCount.GetComponent<GUIText>().text = String.Format("{0:0000}", GameManager.instance.config.highScore);
+		lifeCount.GetComponent<GUIText>().text = "X" + String.Format("{0:00}", GameManager.player.health);
 	}
 }

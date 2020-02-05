@@ -82,7 +82,7 @@ public class TerrorVille : LivingObject
 		indexes.Add("_Ball_Turret", new int[1]);	
 		indexes.Add("_Canon_Turret", new int[2]);
 		
-		ondergrond.active = false;
+		ondergrond.gameObject.SetActive(false);
 		
 		childDictionary = Functions.GetChildTransformDictionary(mainTrainsform, false);
 
@@ -140,8 +140,8 @@ public class TerrorVille : LivingObject
 		if(GameManager.instance.config.gameOptions.effectEnabled)
 			Instantiate(explosion, transform.position, transform.rotation);
 			
-		transform.rigidbody.useGravity = true;	
-		transform.rigidbody.isKinematic = false;
+		transform.GetComponent<Rigidbody>().useGravity = true;	
+		transform.GetComponent<Rigidbody>().isKinematic = false;
 	}
 
 	void OnDestroy() 

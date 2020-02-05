@@ -30,7 +30,7 @@ public class Splash : MonoBehaviour
 		
 		gameObject.GetComponent<UrlButton>().urlToOpen = (imageIndex == 0 ? "www.basegames.nl" : "");//"www.xformgames.com");
 			
-		guiTexture.texture = backgrounds[imageIndex];
+		GetComponent<GUITexture>().texture = backgrounds[imageIndex];
 		imageIndex++;
 		
 		cam.FadeIn();

@@ -30,8 +30,8 @@ public class SceneCamera : MonoBehaviour
 	{
 		get
 		{
-			Vector3 min = camera.ViewportToWorldPoint(new Vector3(0, 0, config.heightOffset)); // links onder
-			Vector3 max = camera.ViewportToWorldPoint(new Vector3(1, 1, config.heightOffset)); // rechts boven
+			Vector3 min = GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0, 0, config.heightOffset)); // links onder
+			Vector3 max = GetComponent<Camera>().ViewportToWorldPoint(new Vector3(1, 1, config.heightOffset)); // rechts boven
 			return new Rect(min.x, min.z, max.x, max.z);
 		}
 	}

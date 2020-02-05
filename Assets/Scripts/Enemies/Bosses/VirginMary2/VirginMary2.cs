@@ -305,7 +305,7 @@ public class VirginMary2 : LivingObject
 		if(health <= (spawnHealth / 100 * goingDownEffectsPrecentage))
 			goingDownEffects.SetActive(true);
 			
-		if(transform.rigidbody.useGravity)
+		if(transform.GetComponent<Rigidbody>().useGravity)
 		{
 			float t = Mathf.Sin(Time.time * 0.5f);			
 			transform.rotation = Quaternion.Euler(t * 360, 0, 0);
@@ -314,8 +314,8 @@ public class VirginMary2 : LivingObject
 		if(health <= 0)
 		{
 			GameManager.timer.RemoveContaining(RandomName);
-			transform.rigidbody.isKinematic = false;
-			transform.rigidbody.useGravity = true;
+			transform.GetComponent<Rigidbody>().isKinematic = false;
+			transform.GetComponent<Rigidbody>().useGravity = true;
 			return;
 		}
 		

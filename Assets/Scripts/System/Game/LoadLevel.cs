@@ -56,6 +56,6 @@ public class LoadLevel : MonoBehaviour
 	
 	void OnGUI()
 	{
-		loadingText.guiText.text = "Loading.. " + (int)loadPrecentage + "%";
+		loadingText.GetComponent<GUIText>().text = "Loading.. " + (int)loadPrecentage + "%";
 	}
 }

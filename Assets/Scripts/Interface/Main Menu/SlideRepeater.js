@@ -6,24 +6,24 @@ function OnGUI()
 {
 	if(repeat)
 	{
-		if((guiTexture.pixelInset.x + guiTexture.texture.width) < scrollArea.x)
-			guiTexture.pixelInset.x = scrollArea.y;
-		else if((guiTexture.pixelInset.x + guiTexture.texture.width) > scrollArea.y)
-			guiTexture.pixelInset.x = scrollArea.x;
+		if((GetComponent.<GUITexture>().pixelInset.x + GetComponent.<GUITexture>().texture.width) < scrollArea.x)
+			GetComponent.<GUITexture>().pixelInset.x = scrollArea.y;
+		else if((GetComponent.<GUITexture>().pixelInset.x + GetComponent.<GUITexture>().texture.width) > scrollArea.y)
+			GetComponent.<GUITexture>().pixelInset.x = scrollArea.x;
 			
 		GUI.depth = 1;
 		GUI.DrawTexture
 		(
 			Rect
 			(
-				(slideSpeed > 0 ? guiTexture.pixelInset.x - guiTexture.texture.width : guiTexture.pixelInset.x + guiTexture.texture.width), 
+				(slideSpeed > 0 ? GetComponent.<GUITexture>().pixelInset.x - GetComponent.<GUITexture>().texture.width : GetComponent.<GUITexture>().pixelInset.x + GetComponent.<GUITexture>().texture.width), 
 				0,//guiTexture.pixelInset.y, 
-				guiTexture.texture.width, 
-				guiTexture.texture.height
+				GetComponent.<GUITexture>().texture.width, 
+				GetComponent.<GUITexture>().texture.height
 			), 
-			guiTexture.texture
+			GetComponent.<GUITexture>().texture
 		);
 	}
 	
-	guiTexture.pixelInset.x += slideSpeed * Time.deltaTime;
+	GetComponent.<GUITexture>().pixelInset.x += slideSpeed * Time.deltaTime;
 }

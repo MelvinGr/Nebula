@@ -244,7 +244,7 @@ public class Boss0 : LivingObject
 		if(GameManager.player == null || Time.timeScale <= 0)
 			return;			
 			
-		if(transform.rigidbody.useGravity)
+		if(transform.GetComponent<Rigidbody>().useGravity)
 		{
 			float t = Mathf.Sin(Time.time * 0.5f);			
 			transform.rotation = Quaternion.Euler(t * -45, t * 360, 0);
@@ -253,8 +253,8 @@ public class Boss0 : LivingObject
 		if(health <= 0)
 		{
 			GameManager.timer.RemoveContaining(RandomName);
-			transform.rigidbody.isKinematic = false;
-			transform.rigidbody.useGravity = true;
+			transform.GetComponent<Rigidbody>().isKinematic = false;
+			transform.GetComponent<Rigidbody>().useGravity = true;
 			return;
 		}
 

@@ -30,8 +30,8 @@ public class UrlButton : MonoBehaviour
 			return;
 			
 		Vector2 mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);		
-		Rect rect = guiTexture.GetScreenRect();				
-		if(Functions.RectangleContains(guiTexture.GetScreenRect(), mousePos))
+		Rect rect = GetComponent<GUITexture>().GetScreenRect();				
+		if(Functions.RectangleContains(GetComponent<GUITexture>().GetScreenRect(), mousePos))
 		{
 			GUI.DrawTexture(new Rect(mousePos.x - rollOverMouseTexture.width / 2, Screen.height - mousePos.y, rollOverMouseTexture.width, rollOverMouseTexture.height), 
 				rollOverMouseTexture, ScaleMode.ScaleToFit, true);
@@ -41,18 +41,18 @@ public class UrlButton : MonoBehaviour
 	void OnMouseEnter()
 	{
 		if(shouldHideCursor)
-			Screen.showCursor = false;
+			Cursor.visible = false;
 				
 		if(clicked)
 			return;
 			
-		audio.PlayOneShot(rolloverAudio);
+		GetComponent<AudioSource>().PlayOneShot(rolloverAudio);
 	}
 	
 	void OnMouseExit()
 	{
 		if(shouldHideCursor)
-			Screen.showCursor = true;
+			Cursor.visible = true;
 	}
 	
 	void OnMouseDown()
@@ -65,7 +65,7 @@ public class UrlButton : MonoBehaviour
 			if(!urlToOpen.StartsWith("http://"))
 				urlToOpen = "http://" + urlToOpen;
 				
-			audio.PlayOneShot(clickAudio);
+			GetComponent<AudioSource>().PlayOneShot(clickAudio);
 			//Application.OpenURL(urlToOpen);
 			Application.ExternalEval("window.open('" + urlToOpen + "')");
 		}

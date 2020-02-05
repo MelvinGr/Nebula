@@ -30,12 +30,12 @@ public class TrophiesScreen : MonoBehaviour
 				bool isNL = (GameManager.instance.config.gameOptions.language != LanguageEnum.COM);
 				
 				if(achievement.maxValue == 1)
-					trans.guiText.text = (achievement.value > 0 ? (isNL ? "Ja": "Yes") : (isNL ? "Nee" : "No"));
+					trans.GetComponent<GUIText>().text = (achievement.value > 0 ? (isNL ? "Ja": "Yes") : (isNL ? "Nee" : "No"));
 				else
-					trans.guiText.text = achievement.value + "/" + achievement.maxValue;
+					trans.GetComponent<GUIText>().text = achievement.value + "/" + achievement.maxValue;
 					
 				if(achievement.value >= 100 && smallerFont != null)
-					trans.guiText.font = smallerFont;
+					trans.GetComponent<GUIText>().font = smallerFont;
 			}
 		}
 	}

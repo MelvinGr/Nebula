@@ -38,7 +38,7 @@ public class OptionsScript : MonoBehaviour
 		{
 			if(child.name == GameManager.instance.config.gameOptions.soundVolume.ToString())
 			{
-				child.guiText.material.color = Color.red;
+				child.GetComponent<GUIText>().material.color = Color.red;
 				selected["SoundVolume Buttons"] = child.gameObject;
 			}
 		}
@@ -47,7 +47,7 @@ public class OptionsScript : MonoBehaviour
 		{
 			if(child.name == GameManager.instance.config.gameOptions.musicVolume.ToString())
 			{
-				child.guiText.material.color = Color.red;
+				child.GetComponent<GUIText>().material.color = Color.red;
 				selected["MusicVolume Buttons"] = child.gameObject;
 			}
 		}
@@ -56,7 +56,7 @@ public class OptionsScript : MonoBehaviour
 		{
 			if(child.name == (GameManager.instance.config.gameOptions.effectEnabled ? 1 : 0).ToString())
 			{
-				child.guiText.material.color = Color.red;
+				child.GetComponent<GUIText>().material.color = Color.red;
 				selected["Effects Buttons"] = child.gameObject;
 			}
 		}
@@ -65,7 +65,7 @@ public class OptionsScript : MonoBehaviour
 		{
 			if(child.name == GameManager.instance.config.gameOptions.antiAliasingLevel.ToString())
 			{
-				child.guiText.material.color = Color.red;
+				child.GetComponent<GUIText>().material.color = Color.red;
 				selected["AntiAliasing Buttons"] = child.gameObject;
 			}
 		}
@@ -73,21 +73,21 @@ public class OptionsScript : MonoBehaviour
 	
 	void DoChildOverDetection(GameObject obj, Vector2 mousPos)
 	{
-		if(audio.isPlaying)
+		if(GetComponent<AudioSource>().isPlaying)
 			return;
 		
 		foreach(Transform child in obj.transform)
 		{								
 			if(selected[obj.name] != child.gameObject)
 			{
-				child.guiText.material.color = Color.white;
+				child.GetComponent<GUIText>().material.color = Color.white;
 				//child.guiText.text = child.guiText.text.Replace("[", "").Replace("]", "");
 			}
 				
-			if(!Functions.RectangleContains(child.guiText.GetScreenRect(), mousPos))				
+			if(!Functions.RectangleContains(child.GetComponent<GUIText>().GetScreenRect(), mousPos))				
 				continue;
 		
-			child.guiText.material.color = Color.red;
+			child.GetComponent<GUIText>().material.color = Color.red;
 			
 			//if(!child.guiText.text.Contains("["))
 				//child.guiText.text = "[" + child.guiText.text + "]";
@@ -135,7 +135,7 @@ public class OptionsScript : MonoBehaviour
 					}
 				}
 				
-				audio.PlayOneShot(clickAudio);
+				GetComponent<AudioSource>().PlayOneShot(clickAudio);
 				
 				AdjustMusicLevel[] musicAdjusters = (AdjustMusicLevel[])FindObjectsOfType(typeof(AdjustMusicLevel));
 				foreach(AdjustMusicLevel adjuster in musicAdjusters)

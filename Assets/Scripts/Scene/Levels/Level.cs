@@ -127,7 +127,7 @@ public class Level : MonoBehaviour
 		blocks = CreateGameObjectWithParent("Blocks");
 		powerUps = CreateGameObjectWithParent("PowerUps");
 
-		blockSize = GameManager.instance.blockPrefabs[0].GetComponent<AlternativeMeshRenderer>().transformThatContainsRenderer.renderer.bounds.size;
+		blockSize = GameManager.instance.blockPrefabs[0].GetComponent<AlternativeMeshRenderer>().transformThatContainsRenderer.GetComponent<Renderer>().bounds.size;
 		layerHeight = blockSize.y;
 	}
 

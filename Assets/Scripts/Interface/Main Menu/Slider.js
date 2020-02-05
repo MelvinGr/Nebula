@@ -7,6 +7,6 @@ InvokeRepeating("UpdateSlide", 0, slideInterval);
 
 function UpdateSlide() 
 {
-	guiTexture.texture = slides[slideIndex % slides.length];
+	GetComponent.<GUITexture>().texture = slides[slideIndex % slides.length];
 	slideIndex++;
 }

@@ -18,7 +18,7 @@ public class PlaySoundSolo : MonoBehaviour
 			}
 		}
 		
-		if(!audio.isPlaying)
-			audio.Play();
+		if(!GetComponent<AudioSource>().isPlaying)
+			GetComponent<AudioSource>().Play();
 	}
 }

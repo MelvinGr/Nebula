@@ -195,8 +195,8 @@ public class Player : LivingObject
 		if(health <= 0)
 		{
 			isGoingDown = true;
-			transform.rigidbody.useGravity = true;	
-			transform.rigidbody.isKinematic = false;	
+			transform.GetComponent<Rigidbody>().useGravity = true;	
+			transform.GetComponent<Rigidbody>().isKinematic = false;	
 			
 			if(goingDownEffects != null)
 				goingDownEffects.SetActive(true);
@@ -209,8 +209,8 @@ public class Player : LivingObject
 		{
 			isGoingDown = false;
 			shouldDie = true;
-			transform.rigidbody.useGravity = false;
-			transform.rigidbody.isKinematic = true;
+			transform.GetComponent<Rigidbody>().useGravity = false;
+			transform.GetComponent<Rigidbody>().isKinematic = true;
 			
 			if(!didExplode)
 			{
@@ -233,10 +233,10 @@ public class Player : LivingObject
 		}
 		else
 		{
-			if(!transform.rigidbody.useGravity)
+			if(!transform.GetComponent<Rigidbody>().useGravity)
 				HandleMovement();
 			
-			if(config.inputEnabled && !transform.rigidbody.useGravity)
+			if(config.inputEnabled && !transform.GetComponent<Rigidbody>().useGravity)
 			{
 				if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.X))			
 					Shoot();
@@ -277,9 +277,9 @@ public class Player : LivingObject
 	{
 		transform.position = new Vector3(20.68f, GameManager.level.layerHeight, Camera.main.transform.position.z - 4);
 		foreach(MeshRenderer renderer in meshRenderers)
-				renderer.active = true;
+				renderer.enabled = true;
 				
-		((BoxCollider)collider).size = colliderSize;
+		((BoxCollider)GetComponent<Collider>()).size = colliderSize;
 		config.imortal = false;
 		
 		//
@@ -306,10 +306,10 @@ public class Player : LivingObject
 		{
 			health -= 1;//Functions.GetBulletDamage(this, bullet);
 			foreach(MeshRenderer renderer in meshRenderers)
-				renderer.active = false;
+				renderer.enabled = false;
 				
-			colliderSize = ((BoxCollider)collider).size;
-			((BoxCollider)collider).size = Vector3.zero;
+			colliderSize = ((BoxCollider)GetComponent<Collider>()).size;
+			((BoxCollider)GetComponent<Collider>()).size = Vector3.zero;
 			hitIndicator.hitIndicatorRemaining = 5f;
 			config.imortal = true;
 	
@@ -335,10 +335,10 @@ public class Player : LivingObject
 				{			
 					health -= 1;//Functions.GetBulletDamage(this, bullet);
 					foreach(MeshRenderer renderer in meshRenderers)
-						renderer.active = false;
+						renderer.enabled = false;
 					
-					colliderSize = ((BoxCollider)collider).size;
-					((BoxCollider)collider).size = Vector3.zero;
+					colliderSize = ((BoxCollider)GetComponent<Collider>()).size;
+					((BoxCollider)GetComponent<Collider>()).size = Vector3.zero;
 					hitIndicator.hitIndicatorRemaining = 5f;
 					config.imortal = true;
 					
@@ -377,7 +377,7 @@ public class Player : LivingObject
 	{
 		if(sceneCamera != null)
 		{
-			Vector3 size = gameObject.GetComponent<AlternativeMeshRenderer>().transformThatContainsRenderer.renderer.bounds.size;
+			Vector3 size = gameObject.GetComponent<AlternativeMeshRenderer>().transformThatContainsRenderer.GetComponent<Renderer>().bounds.size;
 			Vector2[] vects = Functions.RectToVector2(Functions.AddRect(sceneCamera.Constrains, new Rect(size.x / 2, size.z / 2, -size.x / 2, -size.z / 2)));
 			
 			Vector3 tmp = Functions.ClampVector3(transform.position, 
